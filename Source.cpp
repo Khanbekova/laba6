@@ -73,7 +73,7 @@ void OGVG(int **A, int N, int i,int*M) {
 				i = S.top();
 				j = 0;
 				while (j < N) {
-					if ((A[i][j] == 1) && (M[j] > M[i] + A[i][j])) {
+					if ((A[i][j] == 1) && (M[j] == 1000 )) {
 						S.push(j);
 						M[j] = 0;
 						M[j] = M[i] + 1;
